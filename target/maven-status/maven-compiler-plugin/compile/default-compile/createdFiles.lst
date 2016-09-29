@@ -1,3 +1,4 @@
+com/xueyou/ssm/controller/UrlController.class
 com/xueyou/ssm/serviceimpl/FirstServiceimpl.class
 com/xueyou/ssm/service/FirstService.class
 com/xueyou/ssm/dao/FirstDao.class
