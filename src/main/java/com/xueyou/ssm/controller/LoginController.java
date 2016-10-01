@@ -20,6 +20,8 @@ public class LoginController {
     @RequestMapping(value = "/ssmlogin")
     public Map<String,Object> ssmLogin(String username,String password){
         Map<String,Object> params = new HashMap<>();
+        System.out.println(username);
+        System.out.println(password);
         params.put("username",username);
         params.put("password",password);
         return loginService.login(params);

@@ -1,6 +1,7 @@
 /Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/serviceimpl/FirstServiceimpl.java
 /Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/LoginDao.java
 /Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/service/FirstService.java
+/Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/aspect/TestAspect.java
 /Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/controller/FirstController.java
 /Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/controller/UrlPageController.java
 /Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/service/LoginService.java
