@@ -14,4 +14,8 @@ public class UrlPageController {
     public String login() {
         return "login";
     }
+    @RequestMapping(value = "/main")
+    public String main(){
+        return "main";
+    }
 }
