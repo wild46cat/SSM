@@ -4,9 +4,6 @@
     <script src="${pageContext.request.contextPath}/js/base.js"></script>
 </head>
 <body>
-<h2>Hello World!</h2>
-<script type="text/javascript">
-    window.location.replace(BASE_URL + "/web/login");
-</script>
+<h2>unknown error!</h2>
 </body>
 </html>

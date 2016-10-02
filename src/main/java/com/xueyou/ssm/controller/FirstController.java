@@ -1,5 +1,6 @@
 package com.xueyou.ssm.controller;
 
+import com.xueyou.ssm.annotation.ControllerAnnotationLogin;
 import com.xueyou.ssm.service.FirstService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +22,8 @@ public class FirstController {
 
     @RequestMapping(value = "/getjson")
     public Map<String, Object> getJson(String param) {
-        Map<String,Object> params = new HashMap<>();
-        params.put("param",param);
+        Map<String, Object> params = new HashMap<>();
+        params.put("param", param);
         System.out.println(param);
         return firstService.getJson(params);
     }

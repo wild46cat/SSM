@@ -26,8 +26,17 @@
             <param-value>true</param-value>
         </init-param>
     </filter>
+    <filter>
+        <filter-name>getContent</filter-name>
+        <filter-class>com.xueyou.ssm.utils.GetContent</filter-class>
+    </filter>
+
     <filter-mapping>
         <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>getContent</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 

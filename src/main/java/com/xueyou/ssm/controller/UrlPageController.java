@@ -1,5 +1,6 @@
 package com.xueyou.ssm.controller;
 
+import com.xueyou.ssm.annotation.ControllerAnnotationLogin;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,8 +15,10 @@ public class UrlPageController {
     public String login() {
         return "login";
     }
+
+    @ControllerAnnotationLogin
     @RequestMapping(value = "/main")
-    public String main(){
+    public String main() {
         return "main";
     }
 }
