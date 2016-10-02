@@ -7,8 +7,8 @@ var app = angular.module('myLogin', [], function ($httpProvider) {
 
 app.controller('myLoginController', function ($scope, $http) {
     $scope.myLoginParams = {
-        username: '',
-        password: ''
+        username: 'a',
+        password: '1'
     };
     $scope.goLogin = function () {
         var param = {

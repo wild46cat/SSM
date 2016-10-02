@@ -21,4 +21,15 @@ public class UrlPageController {
     public String main() {
         return "main";
     }
+
+    @ControllerAnnotationLogin
+    @RequestMapping(value = "/useradd")
+    public String userAdd(){
+        return "usermanagement/useradd";
+    }
+
+    @RequestMapping(value = "/welcome")
+    public String welcome(){
+        return "welcome";
+    }
 }
