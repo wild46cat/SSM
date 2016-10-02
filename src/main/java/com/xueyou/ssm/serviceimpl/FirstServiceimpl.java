@@ -2,6 +2,7 @@ package com.xueyou.ssm.serviceimpl;
 
 import com.xueyou.ssm.dao.FirstDao;
 import com.xueyou.ssm.service.FirstService;
+import com.xueyou.ssm.utils.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,8 +20,8 @@ public class FirstServiceimpl implements FirstService {
     @Override
     public Map<String, Object> getJson(Map<String, Object> params) {
         Map<String, Object> resMap = new HashMap<>();
-        resMap.put("resCode", "1");
-        resMap.put("resMessage", "success");
+        resMap.put("resCode", Base.MSG_CODE_SUCCESS);
+        resMap.put("resMessage", Base.MSG_SUCCESS);
         resMap.put("resList",firstDao.getUser(params));
         return resMap;
     }
