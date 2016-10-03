@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>main</title>
+    <script src="Component/angular.min-1.2.19.js"></script>
+    <script src="Component/angular-route.min-1.2.19.js"></script>
+    <script src="Component/angular-ui/angular-ui-router.min.js"></script>
+    <link href="Component/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="Component/bootstrap/js/jquery-1.9.1.min.js"></script>
+    <script src="Component/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="Component/bootstrap/js/respond.min.js"></script>
+    <script src="Component/bootstrap/js/html5.js"></script>
+    <![endif]-->
+    <script src="js/main1.js"></script>
+    <script src="js/hotelManagement/hotelAlteration.js"></script>
+    <script src="js/hotelManagement/hotelAlteration2.js"></script>
+    <script src="js/hotelManagement/hotelCaseStatement.js"></script>
+    <script src="js/hotelManagement/hotelRegister.js"></script>
+</head>
+<body>
+<div ng-app="mainApp" ng-controller="mainAppCtrl" id="ng-app" class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">W3Cschool</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row" style="border: solid 1px blue;">
+        <!--<div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>
+        <div class="col-lg-1" style="border: solid 1px green;">1</div>-->
+        <div class="panel panel-primary col-lg-2 col-md-3 col-sm-4 col-xs-12" style="border: none;">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    快捷菜单
+                </h3>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne">
+                                旅馆管理
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#/hotelManagement/hotelAlteration" ng-click="tt()">旅馆变更</a></li>
+                            <li class="list-group-item"><a href="#/hotelManagement/hotelRegister">旅馆注册</a></li>
+                            <li class="list-group-item"><a href="#/hotelManagement/hotelCaseStatement">发案情况</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo">
+                                第 2 部分
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#/">内容2</a></li>
+                            <li class="list-group-item"><a href="#/computers">内容2</a></li>
+                            <li class="list-group-item"><a href="#/nav1/nav1">内容2</a></li>
+                            <li class="list-group-item"><a href="#/blabla">内容3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ui-view class="col-lg-10 col-md-9 col-sm-8 col-xs-12"></div>
+    </div>
+</div>
+</body>
+</html>

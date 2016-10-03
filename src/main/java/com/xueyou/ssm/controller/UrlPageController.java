@@ -32,4 +32,10 @@ public class UrlPageController {
     public String welcome(){
         return "welcome";
     }
+
+    @ControllerAnnotationLogin
+    @RequestMapping(value = "/common/fileupload")
+    public String fileUpload(){
+        return "/common/fileupload";
+    }
 }

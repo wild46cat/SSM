@@ -26,7 +26,6 @@
 
     <script src="${pageContext.request.contextPath}/js/base.js"></script>
     <script src="${pageContext.request.contextPath}/js/main.js"></script>
-    <script src="${pageContext.request.contextPath}/ttt/ttt.js"></script>
 </head>
 <body ng-app="myMain" ng-controller="myMainController" class="container-fluid" style="overflow: visible">
 <nav class="navbar navbar-default" role="navigation">
@@ -111,7 +110,7 @@
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
                     <ul class="list-group">
-                        <li class="list-group-item"><a>内容2</a></li>
+                        <li class="list-group-item"><a ng-click="goFileUpload();">文件上传</a></li>
                         <li class="list-group-item"><a>内容3</a></li>
                         <li class="list-group-item"><a>内容4</a></li>
                         <li class="list-group-item"><a>内容5</a></li>

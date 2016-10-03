@@ -23,9 +23,8 @@
     <script src="${pageContext.request.contextPath}/Component/bootstrap/js/html5.js"></script>
     <![endif]-->
     <script src="${pageContext.request.contextPath}/js/base.js"></script>
-    <script src="${pageContext.request.contextPath}/js/login.js"></script>
 </head>
-<body ng-app="welcome" ng-controller="welcomeController">
+<body>
     <h1>welcome Page!</h1>
 </body>
 </html>

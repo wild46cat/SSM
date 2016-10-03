@@ -16,9 +16,11 @@ var app = angular.module('myMain', [], function ($httpProvider) {
 }]);*/
 
 app.controller('myMainController', function ($scope, $http){
-    alert(123);
     $scope.menuURL =BASE_URL + '/web/welcome';
     $scope.goUserAdd = function(){
         $scope.menuURL = BASE_URL + '/web/useradd';
     };
+    $scope.goFileUpload = function () {
+       $scope.menuURL = BASE_URL + "/web/common/fileupload";
+    }
 });
