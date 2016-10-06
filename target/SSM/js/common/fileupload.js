@@ -20,23 +20,19 @@ fileuploadapp.controller('fileuploadController', function ($scope) {
                     if (data.resCode == 1) {
                         var path = BASE_URL + data.resFilePath;
                         $('#img').attr("src",path);
-                        //alert('上传成功!');
-                        //console.log(data);
+                        //$('#img').attr("src","data:image/jpg;base64," + data.resFile);
+                        alert('上传成功!');
                         $('#resPath').text(data.resFilePath);
-                        //$('#fileimg').append('<img src="data:image/png;base64,'+ data.resFile + '" style="width: 200px;height: 200px;border: solid #cccccc 1px;"/>');
                     } else {
                         var errorPath = BASE_URL + '/img/404.jpg';
                         $('#img').attr("src",errorPath);
                         alert('上传失败!');
-                        console.log(data);
                         $('#resPath').text(' ');
-                        //$('#fileimg').append('<img src="data:image/png;base64,'+ 'error' + '" style="width: 200px;height: 200px;border: solid #cccccc 1px;"/>');
                     }
                 }
             },
             error: function (data, status) {
                 alert('error');
-                //console.log(data);
             }
         });
     });
