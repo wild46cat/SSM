@@ -32,7 +32,7 @@
 <hr/>
     select a file <input type="file" name="file" id="file">
 <div id="resPath"></div>
-<div id="fileimg"><img src="" style="width: 200px;height: 200px;border: solid #cccccc 1px;"/></div>
+<div id="fileimg"><img id="img" src="" style="width: 200px;height: 200px;border: solid #cccccc 1px;"/></div>
 <button class="btn btn-primary" id="ajaxUpload">ajax上传</button>
 </body>
 </html>
