@@ -20,6 +20,7 @@ fileuploadapp.controller('fileuploadController', function ($scope) {
                     if (data.resCode == 1) {
                         var path = BASE_URL + data.resFilePath;
                         $('#img').attr("src",path);
+                        //ie8下,上传如果文件过大,渲染不出来
                         //$('#img').attr("src","data:image/jpg;base64," + data.resFile);
                         alert('上传成功!');
                         $('#resPath').text(data.resFilePath);
