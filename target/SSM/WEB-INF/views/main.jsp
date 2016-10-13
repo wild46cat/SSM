@@ -85,15 +85,17 @@
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion"
                            href="#collapseOne">
-                            用户管理
+                            系统管理
                         </a>
                     </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse">
                     <ul class="list-group">
-                        <li class="list-group-item"><a class="text-center" ng-click="goUserAdd();">用户添加</a>
+                        <li class="list-group-item"><a ng-click="goPage('/web/usermanagement');">用户管理</a>
                         </li>
                         <li class="list-group-item"><a>用户注册</a></li>
+                        <li class="list-group-item"><a ng-click="goPage('/web/departmentmanagement');">部门管理</a></li>
+                        <li class="list-group-item"><a>岗位管理</a></li>
                         <li class="list-group-item"><a>权限设置</a></li>
                         <li class="list-group-item"><a>角色设置</a></li>
                     </ul>
@@ -110,7 +112,7 @@
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
                     <ul class="list-group">
-                        <li class="list-group-item"><a ng-click="goFileUpload();">文件上传</a></li>
+                        <li class="list-group-item"><a ng-click="goPage('/web/common/fileupload');">文件上传</a></li>
                         <li class="list-group-item"><a>内容3</a></li>
                         <li class="list-group-item"><a>内容4</a></li>
                         <li class="list-group-item"><a>内容5</a></li>
