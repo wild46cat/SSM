@@ -2,6 +2,30 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xueyou.ssm.dao.DepartmentDao">
     <select id="departmentList" statementType="STATEMENT" resultType="Map">
-        select ID as id,DEPNAME as name,MEMO as memo,PARENTID as parentId from department d
+        select d.ID as id,d.DEPNAME as name,d.MEMO as memo,d.PARENTID as parentId,d.ORDERNUMBER as ordernumber,IFNULL(dd.DEPNAME,'-') as parentName from ssm.department d left join ssm.department dd on d.PARENTID = dd.ID
     </select>
+
+    <insert id="departmentAdd" statementType="STATEMENT" parameterType="Map">
+        insert into department (ID, DEPNAME, PARENTID, MEMO, ORDERNUMBER) values(UUID(),'${nodename}','${parentid}','${memo}','${order}')
+    </insert>
+
+    <update id="departmentEdit" parameterType="Map" statementType="STATEMENT">
+        update department set DEPNAME='${nodename}',PARENTID='${parentid}',MEMO = '${memo}',ORDERNUMBER = '${order}' where ID='${nodeid}'
+    </update>
+
+    <select id="hasExistInThisNode" parameterType="Map" statementType="STATEMENT" resultType="Map">
+        select * from department where PARENTID = '${parentid}' and DEPNAME = '${nodename}'
+    </select>
+
+    <delete id="departmentDelete" statementType="STATEMENT" parameterType="Map">
+        DELETE FROM department where ID = '${depid}'
+    </delete>
+
+    <delete id="subdepartmentDelete" statementType="STATEMENT" parameterType="Map">
+      DELETE FROM department where PARENTID = '${depid}'
+    </delete>
+
+    <insert id="departmentNewRoot" statementType="STATEMENT" parameterType="Map">
+        insert into department (ID, DEPNAME, PARENTID, MEMO, ORDERNUMBER) values(UUID(),'新增根节点',UUID(),'-',1)
+    </insert>
 </mapper>

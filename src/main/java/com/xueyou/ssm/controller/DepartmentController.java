@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -22,4 +23,44 @@ public class DepartmentController {
     public Map<String,Object> departmentList(){
         return departmentService.departmentList();
     }
+
+    @RequestMapping(value = "/departmentadd")
+    public Map<String,Object> departmentAdd(String nodename,String parentid,String memo,String order){
+        Map<String,Object> params = new HashMap<>();
+        params.put("nodename",nodename);
+        params.put("parentid",parentid);
+        params.put("memo",memo);
+        params.put("order",order);
+        return departmentService.departmentAdd(params);
+    }
+
+    @RequestMapping(value = "/departmentedit")
+    public Map<String,Object> departmentEdit(String nodeid,String nodename,String parentid,String memo,String order){
+        Map<String,Object> params = new HashMap<>();
+        params.put("nodeid",nodeid);
+        params.put("nodename",nodename);
+        params.put("parentid",parentid);
+        params.put("memo",memo);
+        params.put("order",order);
+        return departmentService.departmentEdit(params);
+    }
+
+    @RequestMapping(value = "/departmentdelete")
+    public Map<String,Object> departmentDelete(String depid){
+        Map<String,Object> params = new HashMap<>();
+        params.put("depid",depid);
+        return departmentService.departmentDelete(params);
+    }
+    @RequestMapping(value = "/departmentdeletecascade")
+    public Map<String,Object> departmentDeleteCascade(String depid){
+        Map<String,Object> params = new HashMap<>();
+        params.put("depid", depid);
+        return departmentService.departmentDeleteCascade(params);
+    }
+
+    @RequestMapping(value = "/departmentnewroot")
+    public Map<String,Object> departmentnewroot(){
+        return departmentService.departmentNewRoot();
+    }
+
 }
