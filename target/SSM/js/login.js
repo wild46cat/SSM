@@ -7,8 +7,8 @@ var app = angular.module('myLogin', [], function ($httpProvider) {
 
 app.controller('myLoginController', function ($scope, $http) {
     $scope.myLoginParams = {
-        username: '',
-        password: ''
+        username: 'a',
+        password: '1'
     };
     $scope.goLogin = function () {
         var param = {
@@ -16,10 +16,9 @@ app.controller('myLoginController', function ($scope, $http) {
             password: $scope.myLoginParams.password
         };
         $http.post(BASE_URL + '/login/ssmlogin', param).success(function (data) {
-            console.log(data);
             if(data != null){
-                if(data.resCode == '1'){
-                    alert(MSG_LOGINSUCCESS);
+                if(data.resCode == 1){
+                    //alert(MSG_LOGINSUCCESS);
                     window.location.replace(BASE_URL + '/web/main');
                 }else{
                     alert(MSG_LOGINERROR);

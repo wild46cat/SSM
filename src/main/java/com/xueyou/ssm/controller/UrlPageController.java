@@ -21,4 +21,27 @@ public class UrlPageController {
     public String main() {
         return "main";
     }
+
+    @ControllerAnnotationLogin
+    @RequestMapping(value = "/usermanagement")
+    public String userManagement(){
+        return "systemManagement/user";
+    }
+
+    @RequestMapping(value = "/welcome")
+    public String welcome(){
+        return "welcome";
+    }
+
+    @ControllerAnnotationLogin
+    @RequestMapping(value = "/common/fileupload")
+    public String fileUpload(){
+        return "/common/fileupload";
+    }
+
+    @ControllerAnnotationLogin
+    @RequestMapping(value = "/departmentmanagement")
+    public String departmentManagement(){
+        return "systemManagement/department";
+    }
 }

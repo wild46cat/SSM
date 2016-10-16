@@ -59,6 +59,17 @@ function getRoot() {
 }
 var BASE_URL = getRoot();
 
+//getRequestParam
+function getRequestParam(param) {
+    var requestString = location.search;
+    var reg = new RegExp("(?:\\?|&)" + param + "=(.*?)(?:&|$)");
+    if (reg.test(requestString)) {
+        return decodeURIComponent(RegExp.$1);
+    } else {
+        return '';
+    }
+}
+
 //MSG
 var MSG_ERROR = '网络连接超时!';
 var MSG_LOGINSUCCESS = '登录成功!';
