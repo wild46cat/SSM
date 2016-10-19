@@ -44,4 +44,10 @@ public class UrlPageController {
     public String departmentManagement(){
         return "systemManagement/department";
     }
+
+    @ControllerAnnotationLogin
+    @RequestMapping(value = "/dutymanagement")
+    public String dutyManagement(){
+        return "systemManagement/duty";
+    }
 }

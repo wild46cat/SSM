@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xueyou.ssm.dao.DutyDao">
+    <select id="dutyList" parameterType="Map" statementType="STATEMENT" resultType="Map">
+        select * from duty where DEPID = '${depid}'
+    </select>
+
+    <insert id="dutyAdd" parameterType="Map" statementType="STATEMENT">
+        insert into duty(ID,DUTYNAME,DEPID,MEMO,ORDERNUMBER) VALUES (UUID(),'${dutyname}','${depid}','${memo}','${orderNumber}')
+    </insert>
+
+    <delete id="dutyDelete" statementType="STATEMENT" parameterType="Map">
+        delete from duty where ID = '${dutyid}'
+    </delete>
+
+    <update id="dutyUpdate" statementType="STATEMENT" parameterType="Map">
+        update duty set DEPID = '${depid}',DUTYNAME='${dutyname}',MEMO = '${memo}',ORDERNUMBER = '${orderNumber}' WHERE ID = '${dutyid}'
+    </update>
+</mapper>

@@ -65,7 +65,7 @@
     </table>
     <div style="margin-top: 30px; text-align: center;">
         <a class="easyui-linkbutton" data-options="iconCls:'icon-add'" onclick="executeadd();">增加</a>
-        <a href="#" class="easyui-linkbutton" onclick="executecancel();" style="text-align: center;">取消</a>
+        <a class="easyui-linkbutton" onclick="executecancel();" style="text-align: center;">取消</a>
     </div>
 </div>
 
@@ -96,7 +96,7 @@
     </table>
     <div style="margin-top: 30px; text-align: center;">
         <a class="easyui-linkbutton" data-options="iconCls:'icon-edit'" onclick="executeedit();">修改</a>
-        <a href="#" class="easyui-linkbutton" onclick="executecancel();" style="text-align: center;">取消</a>
+        <a class="easyui-linkbutton" onclick="executecancel();" style="text-align: center;">取消</a>
     </div>
     <div style="display: none;"><input id="nowid" class="easyui-textbox" type="text"></div>
 

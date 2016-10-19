@@ -95,7 +95,7 @@
                         </li>
                         <li class="list-group-item"><a>用户注册</a></li>
                         <li class="list-group-item"><a ng-click="goPage('/web/departmentmanagement');">部门管理</a></li>
-                        <li class="list-group-item"><a>岗位管理</a></li>
+                        <li class="list-group-item"><a ng-click="goPage('/web/dutymanagement');">岗位管理</a></li>
                         <li class="list-group-item"><a>权限设置</a></li>
                         <li class="list-group-item"><a>角色设置</a></li>
                     </ul>

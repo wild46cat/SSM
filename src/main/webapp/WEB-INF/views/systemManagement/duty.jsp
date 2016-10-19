@@ -27,40 +27,32 @@
     <script src="${pageContext.request.contextPath}/Component/bootstrap/js/html5.js"></script>
     <![endif]-->
     <script src="${pageContext.request.contextPath}/js/base.js"></script>
-    <script src="${pageContext.request.contextPath}/js/systemManagement/department.js"></script>
+    <script src="${pageContext.request.contextPath}/js/systemManagement/duty.js"></script>
 </head>
-<body class="container-fluid" ng-app="departmentapp" ng-controller="departmentController">
-<%--<div>{{departmentList}}</div>--%>
+<body class="container-fluid" ng-app="dutyapp" ng-controller="dutyController">
 <div class="page-header">
     <h1>系统管理
-        <small>--部门管理</small>
+        <small>--岗位管理</small>
     </h1>
 </div>
-
-<div id="dlg" class="easyui-dialog" title="新增部门" data-options="iconCls:'icon-add',closed:'true',modal:'true'"
-     style="width:500px;height:300px;padding:10px">
+<div id="dlg" class="easyui-dialog" title="新增部门" data-options="iconCls:'icon-add',closed:'true',modal:'true',top:100,left:100"
+     style="width:500px;height:250px;padding:10px">
+    <div style="display: none;">
+        <input id="depid" class="easyui-textbox" type="text" style="width: 250px;">
+    </div>
     <table cellpadding="5">
         <tr style="margin-top: 10px;">
-            <td>目录名称:</td>
-            <td><input id="nodename" class="easyui-textbox" type="text" style="width: 250px;"></td>
+            <td>岗位名称:</td>
+            <td><input id="dutyname" class="easyui-textbox" type="text" style="width: 250px;"></td>
         </tr>
         <tr style="margin-top: 10px;">
-            <td>上级目录编号:</td>
-            <td><input id="parentnodecode" disabled="disabled" class="easyui-textbox" type="text"
-                       style="width: 250px;"/></td>
-        <tr style="margin-top: 10px;">
-            <td>上级目录:</td>
-            <td><input id="parentnode" disabled="disabled" class="easyui-textbox" type="text" style="width: 250px;"/>
-            </td>
-        </tr>
-        <tr style="margin-top: 10px;">
-            <td>描述:</td>
+            <td>岗位描述:</td>
             <td><input id="memo" class="easyui-textbox" data-options="multiline:true"
                        style="height:60px;width: 250px;"/></td>
         </tr>
         <tr style="margin-top: 10px;">
             <td>序号:</td>
-            <td><input id="order" class="easyui-textbox" type="text" style="width: 250px;"/></td>
+            <td><input id="ordernumber" class="easyui-textbox" type="text" style="width: 250px;"></td>
         </tr>
     </table>
     <div style="margin-top: 30px; text-align: center;">
@@ -69,29 +61,25 @@
     </div>
 </div>
 
-<div id="dlgedit" class="easyui-dialog" title="修改部门" data-options="iconCls:'icon-edit',closed:'true',modal:'true'"
+<div id="dlgedit" class="easyui-dialog" title="修改部门" data-options="iconCls:'icon-edit',closed:'true',modal:'true',left:100,top:100"
      style="width:500px;height:300px;padding:10px">
     <table cellpadding="5">
         <tr style="margin-top: 10px;">
-            <td>目录名称:</td>
-            <td><input id="nodenameedit" class="easyui-textbox" type="text" style="width: 250px;"></td>
+            <td>岗位名称:</td>
+            <td><input id="dutynameedit" class="easyui-textbox" type="text" style="width: 250px;"></td>
         </tr>
-        <tr style="margin-top: 10px;">
-            <td>上级目录编号:</td>
-            <td><input id="parentnodecodeedit" disabled="disabled" class="easyui-textbox" type="text"
-                       style="width: 250px;"/></td>
         <tr style="margin-top: 10px;">
             <td>上级目录:</td>
             <td><input id="parentdepcombotree" style="width: 250px;"></td>
         </tr>
         <tr style="margin-top: 10px;">
-            <td>描述:</td>
+            <td>岗位描述:</td>
             <td><input id="memoedit" class="easyui-textbox" data-options="multiline:true"
                        style="height:60px;width: 250px;"/></td>
         </tr>
         <tr style="margin-top: 10px;">
             <td>序号:</td>
-            <td><input id="orderedit" class="easyui-textbox" type="text" style="width: 250px;"/></td>
+            <td><input id="ordernumberedit" class="easyui-textbox" type="text" style="width: 250px;"/></td>
         </tr>
     </table>
     <div style="margin-top: 30px; text-align: center;">
@@ -107,14 +95,24 @@
         <h3 class="panel-title">easyui tree</h3>
     </div>
     <div class="panel-body">
-        <button class="btn btn-success" ng-click="newRoot();"><i class="glyphicon glyphicon-tree-conifer"></i>新建根节点
-        </button>
-        <button class="btn btn-success" ng-click="add();"><i class="glyphicon glyphicon-plus"></i>增加</button>
-        <button class="btn btn-warning" ng-click="edit();"><i class="glyphicon glyphicon-edit"></i>修改</button>
-        <button class="btn btn-danger" ng-click="delete();"><i class="glyphicon glyphicon-trash"></i>删除</button>
-        <button class="btn btn-success" ng-click="refresh();"><i class="glyphicon glyphicon-refresh"></i>刷新</button>
-        <div class="easyui-panel" style="padding:5px">
-            <ul id="mytree" class="easyui-tree" data-options="animate:true,lines:true" style="width: 300px;"></ul>
+        <div class="easyui-layout" style="width:100%;height:100%;">
+            <div data-options="region:'north'" style="height:auto;">
+                <button class="btn btn-success" ng-click="add();"><i class="glyphicon glyphicon-plus"></i>增加</button>
+                <button class="btn btn-warning" ng-click="edit();"><i class="glyphicon glyphicon-edit"></i>修改</button>
+                <button class="btn btn-danger" ng-click="delete();"><i class="glyphicon glyphicon-trash"></i>删除</button>
+                <button class="btn btn-success" ng-click="refresh();"><i class="glyphicon glyphicon-refresh"></i>刷新
+                </button>
+            </div>
+
+            <div data-options="region:'west',title:'部门',split:true" style="width: 300px;">
+                <div class="easyui-panel">
+                    <ul id="mytree" class="easyui-tree" data-options="fit:true,animate:true,border:false" style="border: 0;"></ul>
+                </div>
+            </div>
+            <div data-options="region:'center',title:'岗位',fit:true">
+                <div id="mytreecombo" style="width: 300px;"></div>
+                <table id="dg"></table>
+            </div>
         </div>
     </div>
 </div>
