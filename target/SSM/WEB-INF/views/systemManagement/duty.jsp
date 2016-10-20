@@ -106,7 +106,7 @@
 
             <div data-options="region:'west',title:'部门',split:true" style="width: 300px;">
                 <div class="easyui-panel">
-                    <ul id="mytree" class="easyui-tree" data-options="fit:true,animate:true,border:false" style="border: 0;"></ul>
+                    <ul id="mytree" class="easyui-tree" data-options="animate:true,lines:true"></ul>
                 </div>
             </div>
             <div data-options="region:'center',title:'岗位',fit:true">

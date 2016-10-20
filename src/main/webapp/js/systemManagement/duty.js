@@ -86,7 +86,6 @@ dutyapp.controller('dutyController', function ($scope, $http) {
                             nowrap: false,
                             striped: true,
                             collapsible: true,
-                            idField: 'DUTYID',
                             singleSelect: true,
                             rownumbers: true,
                             columns: [[
@@ -143,9 +142,6 @@ dutyapp.controller('dutyController', function ($scope, $http) {
             }
             //alert(node.id + '----' + node.text + '----' + node.memo);  // alert node text property when clicked
         }
-    });
-    $('#mytree').tree({
-        'border': false
     });
 
 

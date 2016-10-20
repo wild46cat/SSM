@@ -86,7 +86,6 @@ dutyapp.controller('dutyController', function ($scope, $http) {
                             nowrap: false,
                             striped: true,
                             collapsible: true,
-                            idField: 'DUTYID',
                             singleSelect: true,
                             rownumbers: true,
                             columns: [[
