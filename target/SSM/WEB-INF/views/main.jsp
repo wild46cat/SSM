@@ -61,6 +61,7 @@
     </div>
 </nav>
 <div class="row">
+    <%--<div>{{menulist}}</div>--%>
     <!--<div class="col-lg-1" style="border: solid 1px green;">1</div>
     <div class="col-lg-1" style="border: solid 1px green;">1</div>
     <div class="col-lg-1" style="border: solid 1px green;">1</div>
@@ -73,7 +74,7 @@
     <div class="col-lg-1" style="border: solid 1px green;">1</div>
     <div class="col-lg-1" style="border: solid 1px green;">1</div>
     <div class="col-lg-1" style="border: solid 1px green;">1</div>-->
-    <div class="panel panel-primary col-lg-2 col-md-3 col-sm-4 col-xs-12" style="border: none;">
+    <%--<div class="panel panel-primary col-lg-2 col-md-3 col-sm-4 col-xs-12" style="border: none;">
         <div class="panel-heading">
             <h3 class="panel-title">
                 快捷菜单
@@ -116,6 +117,36 @@
                         <li class="list-group-item"><a>内容3</a></li>
                         <li class="list-group-item"><a>内容4</a></li>
                         <li class="list-group-item"><a>内容5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>--%>
+    <div class="panel panel-primary col-lg-2 col-md-3 col-sm-4 col-xs-12" style="border: none;">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                快捷菜单
+            </h3>
+        </div>
+        <div class="panel-group" id="accordion{{$index}}" >
+            <div class="panel panel-default" ng-repeat="x in menulist">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion{{$index}}"
+                           href="#collapseOne{{$index}}">
+                            {{x.NAME}}
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne{{$index}}" class="panel-collapse collapse">
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="y in x.children"><a
+                                ng-click="goPage(y.URL);">{{y.NAME}}</a></li>
+                        <%--<li class="list-group-item"><a>用户注册</a></li>
+                        <li class="list-group-item"><a ng-click="goPage('/web/departmentmanagement');">部门管理</a></li>
+                        <li class="list-group-item"><a ng-click="goPage('/web/dutymanagement');">岗位管理</a></li>
+                        <li class="list-group-item"><a>权限设置</a></li>
+                        <li class="list-group-item"><a>角色设置</a></li>--%>
                     </ul>
                 </div>
             </div>

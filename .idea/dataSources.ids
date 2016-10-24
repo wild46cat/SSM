@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ssm@localhost" uuid="0c83aa0a-214c-4edb-a074-9999f8c0ede2">
+    <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="ssm"/>
+    <table name="department" schema="" catalog="ssm" type="TABLE">
+      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DEPNAME" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PARENTID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="MEMO" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ORDERNUMBER" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="duty" schema="" catalog="ssm" type="TABLE">
+      <column name="ID" sqlType="VARCHAR" precision="59" scale="0" nullable="false" jdbcType="12"/>
+      <column name="DUTYNAME" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="MEMO" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DEPID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ORDERNUMBER" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="user" schema="" catalog="ssm" type="TABLE">
+      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="J1VVSUQoKTsn"/>
+      <column name="NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="AGE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="BIRTHDAY" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="LOGINID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="J3VzZXIxJw=="/>
+      <column name="PASSWORD" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="JzEyMzQ1Nic="/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+  </data-source>
+</component>
