@@ -12,7 +12,8 @@ public interface DepartmentDao {
     public int departmentAdd(Map<String,Object> params);
     public int departmentEdit(Map<String,Object> params);
     public int departmentDelete(Map<String,Object> params);
-    public int subdepartmentDelete(Map<String,Object> params);
+    public int departmentDeleteCascade(Map<String,Object> params);
+    public int dutyDeleteCascade(Map<String,Object> params);
     public int departmentNewRoot();
 
 }

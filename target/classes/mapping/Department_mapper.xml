@@ -18,11 +18,15 @@
     </select>
 
     <delete id="departmentDelete" statementType="STATEMENT" parameterType="Map">
-        DELETE FROM department where ID = '${depid}'
+        DELETE FROM department where ID = '${depid}';
     </delete>
 
-    <delete id="subdepartmentDelete" statementType="STATEMENT" parameterType="Map">
-      DELETE FROM department where PARENTID = '${depid}'
+    <delete id="dutyDeleteCascade" statementType="STATEMENT" parameterType="Map">
+        DELETE FROM duty where DEPID = '${depid}';
+    </delete>
+
+    <delete id="departmentDeleteCascade" statementType="STATEMENT" parameterType="Map">
+        DELETE FROM department where ID = '${depid}';
     </delete>
 
     <insert id="departmentNewRoot" statementType="STATEMENT" parameterType="Map">

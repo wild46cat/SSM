@@ -42,7 +42,98 @@
     <favorites_list name="SSM" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="department.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemManagement/department.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="126" column="50" selection-start-line="126" selection-start-column="50" selection-end-line="126" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DepartmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2473#2474#0" expanded="true" />
+                <element signature="e#2533#2534#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DepartmentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Department_mapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Department_mapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0983146">
+              <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+              <folding>
+                <marker date="1477401648000" expanded="true" signature="285:496" placeholder="select d.ID ..department..." />
+                <marker date="1477401648000" expanded="true" signature="598:727" placeholder="insert into ..." />
+                <marker date="1477401648000" expanded="true" signature="830:959" placeholder="update depar..." />
+                <marker date="1477401648000" expanded="true" signature="1083:1166" placeholder="select * fro..department..." />
+                <marker date="1477401648000" expanded="true" signature="1271:1315" placeholder="DELETE FROM ..." />
+                <marker date="1477401648000" expanded="true" signature="1422:1463" placeholder="DELETE FROM ..." />
+                <marker date="1477401648000" expanded="true" signature="1576:1620" placeholder="DELETE FROM ..." />
+                <marker date="1477401648000" expanded="true" signature="1727:1828" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssm.department" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/cc06b640/0c83aa0a-214c-4edb-a074-9999f8c0ede2/ssm..department">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="department.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/department.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-43.807693">
+              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/ttt/ttt.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/usermanagement/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/ttt/ttt.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/usermanagement/useradd.js" />
@@ -75,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/common/common.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/Component/ajaxfileupload.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/Component/bootstrap/js/jquery-1.8.3.min.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/FileUploadController.java" />
@@ -94,11 +183,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/user.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/base.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc/datasource.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DepartmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/Department_mapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/service/DepartmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DepartmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/UrlPageController.java" />
@@ -108,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DutyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DutyDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/systemManagement/department.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/duty.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/systemManagement/duty.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/service/MenuService.java" />
@@ -118,6 +202,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/Menu_mapper.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0c83aa0a-214c-4edb-a074-9999f8c0ede2/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DepartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/systemManagement/department.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DepartmentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/Department_mapper.xml" />
       </list>
     </option>
   </component>
@@ -708,6 +799,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="dynamic.classpath" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="Duty&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;departmentDa&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java&#10;Department&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Department_mapper.xml&#10;Depar&#9;PSI&#9;JAVA://com.xueyou.ssm.serviceimpl.DepartmentServiceImpl&#10;depart&#9;PSI&#9;JAVA://com.xueyou.ssm.controller.DepartmentController" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1075,12 +1167,12 @@
       <workItem from="1475100018397" duration="11455000" />
       <workItem from="1475410211155" duration="84113000" />
       <workItem from="1476619176462" duration="25491000" />
-      <workItem from="1476967952328" duration="8019000" />
+      <workItem from="1476967952328" duration="14197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117623000" />
+    <option name="totallyTimeSpent" value="123801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1095,10 +1187,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5373494" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.49298596" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.49298596" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.50701404" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1136,27 +1229,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common/fileupload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/FirstController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/FirstDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/FirstServiceimpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1261,28 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54025424">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Department_mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7118644">
-          <caret line="28" column="107" selection-start-line="28" selection-start-column="107" selection-end-line="28" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DepartmentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6398305">
-          <caret line="62" column="63" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/FileUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1374,27 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="133" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
-          <folding>
-            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="select * fro..duty..." />
-            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="update duty ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/department.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="20.923077">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/duty.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.153846">
@@ -1416,14 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0c83aa0a-214c-4edb-a074-9999f8c0ede2/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DutyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1431,14 +1452,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemManagement/department.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,17 +1479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DepartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9088984">
-          <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-          <folding>
-            <element signature="e#2352#2353#0" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/service/MenuService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1490,9 +1492,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#763#764#0" expanded="false" />
+            <element signature="e#811#812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1502,7 +1504,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1547,6 +1549,137 @@
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
             <marker date="1477318883000" expanded="true" signature="-1:-1" placeholder="SELECT * fro..menu..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/0c83aa0a-214c-4edb-a074-9999f8c0ede2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>0c83aa0a-214c-4edb-a074-9999f8c0ede2</OriginalElement>
+          <nodes>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.resource</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.user</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.user_role</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.role</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.menu</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.department</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.duty</node>
+            <node x="" y="">0c83aa0a-214c-4edb-a074-9999f8c0ede2.table:ssm.power</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="385.0" y="353.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/cc06b640/0c83aa0a-214c-4edb-a074-9999f8c0ede2/ssm..department">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4957627">
+          <caret line="151" column="36" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0c83aa0a-214c-4edb-a074-9999f8c0ede2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/department.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-43.807693">
+          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2473#2474#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemManagement/department.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="50" selection-start-line="126" selection-start-column="50" selection-end-line="126" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DepartmentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76404494">
+          <caret line="16" column="133" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
+          <folding>
+            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="select * fro..duty..." />
+            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1476894971000" expanded="true" signature="-1:-1" placeholder="update duty ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Department_mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0983146">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <marker date="1477401648000" expanded="true" signature="285:496" placeholder="select d.ID ..department..." />
+            <marker date="1477401648000" expanded="true" signature="598:727" placeholder="insert into ..." />
+            <marker date="1477401648000" expanded="true" signature="830:959" placeholder="update depar..." />
+            <marker date="1477401648000" expanded="true" signature="1083:1166" placeholder="select * fro..department..." />
+            <marker date="1477401648000" expanded="true" signature="1271:1315" placeholder="DELETE FROM ..." />
+            <marker date="1477401648000" expanded="true" signature="1422:1463" placeholder="DELETE FROM ..." />
+            <marker date="1477401648000" expanded="true" signature="1576:1620" placeholder="DELETE FROM ..." />
+            <marker date="1477401648000" expanded="true" signature="1727:1828" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

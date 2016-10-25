@@ -1,5 +1,6 @@
 package com.xueyou.ssm.serviceimpl;
 
+import com.alibaba.fastjson.JSON;
 import com.xueyou.ssm.dao.DepartmentDao;
 import com.xueyou.ssm.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,13 +49,20 @@ public class DepartmentServiceImpl implements DepartmentService {
     public Map<String, Object> departmentDelete(Map<String, Object> params) {
         Map<String, Object> resMap = new HashMap<>();
         resMap.put("resCode", departmentDao.departmentDelete(params));
+        departmentDao.dutyDeleteCascade(params);
         return resMap;
     }
 
     public Map<String, Object> departmentDeleteCascade(Map<String, Object> params) {
         Map<String, Object> resMap = new HashMap<>();
-        resMap.put("resCode", departmentDao.departmentDelete(params));
-        resMap.put("resCode", departmentDao.subdepartmentDelete(params));
+        List<String> depidList = JSON.parseArray(params.get("depid").toString(), String.class);
+        int i =0;
+        for (String s : depidList) {
+            params.put("depid",s);
+            i += departmentDao.departmentDeleteCascade(params);
+            departmentDao.dutyDeleteCascade(params);
+        }
+        resMap.put("resCode",i);
         return resMap;
     }
 

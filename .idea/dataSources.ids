@@ -22,14 +22,57 @@
       <column name="ORDERNUMBER" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="ID"/>
     </table>
+    <table name="menu" schema="" catalog="ssm" type="TABLE">
+      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="Cg=="/>
+      <column name="NAME" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="STATUS" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="MS0tPuWQr+eUqCAwLS0+5YGc55So"/>
+      <column name="LEVEL" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA==" remarks="5LyY5YWI57qn"/>
+      <column name="URL" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="power" schema="" catalog="ssm" type="TABLE">
+      <column name="ROLEID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="Cg=="/>
+      <column name="RESOURCEID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ROLEID,RESOURCEID"/>
+    </table>
+    <table name="resource" schema="" catalog="ssm" type="TABLE">
+      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="NAME" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5pa55rOV5ZCN56ewKOiLseaWhyk="/>
+      <column name="TITLE" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="5Lit5paH5ZCN56ew77yI5pi+56S677yJ"/>
+      <column name="STATUS" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="MS0tPuWQr+eUqCAwLS0+56aB55So"/>
+      <column name="PID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TYPE" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="MS0tPuebruW9leaooeWdlyAyLS0+5pa55rOV"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="role" schema="" catalog="ssm" type="TABLE">
+      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ROLENAME" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="REMARK" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="STATUS" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" def="JzEn" remarks="MS0tPuWQr+eUqCAwLS0+56aB55So"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
     <table name="user" schema="" catalog="ssm" type="TABLE">
-      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="J1VVSUQoKTsn"/>
+      <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <column name="NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
       <column name="AGE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="BIRTHDAY" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
       <column name="LOGINID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="J3VzZXIxJw=="/>
       <column name="PASSWORD" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="JzEyMzQ1Nic="/>
+      <column name="DUTYID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PHONE" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EMAIL" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PHOTO" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="REMARK" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="CREATETIME" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="STATUS" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="JzEn" remarks="MeKAlD7lkK/nlKggMOKAlD7npoHnlKg="/>
       <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="user_role" schema="" catalog="ssm" type="TABLE">
+      <column name="USERID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ROLEID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="USERID,ROLEID"/>
     </table>
   </data-source>
 </component>

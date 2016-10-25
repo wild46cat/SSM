@@ -60,6 +60,14 @@ function convert(rows) {
     return nodes;
 }
 
+//某一节点下的所有子节点
+function getChildren(id/*节点ID*/){
+    var $tree = $('#mytree');
+    var node = $tree.tree('find',id);
+    var childrenNodes = $tree.tree('getChildren',node.target);
+    return childrenNodes;
+}
+
 departmentapp.controller('departmentController', function ($scope, $http) {
     $('#mytree').tree({
         loadFilter: function (rows) {
@@ -112,10 +120,15 @@ departmentapp.controller('departmentController', function ($scope, $http) {
         var selectedNode = $('#mytree').tree('getSelected');
         if (selectedNode != null) {
             var nodeid = selectedNode.id;
-            var flag = false;
             if (!$('#mytree').tree('isLeaf', selectedNode.target)) {
                 if (confirm('删除该部门,可能会删除其中的子部门,确认删除?')) {
-                    $http.post(BASE_URL + '/app/departmentdeletecascade', {depid: nodeid}).success(function (data) {
+                    var childnodes = getChildren(nodeid);
+                    var childnodesidarray = [];
+                    childnodesidarray.push(nodeid);
+                    angular.forEach(childnodes, function (data,index,array) {
+                        childnodesidarray.push(data.id);
+                    });
+                    $http.post(BASE_URL + '/app/departmentdeletecascade', {depid: JSON.stringify(childnodesidarray)}).success(function (data) {
                         if (data != null && data.resCode > 0) {
                             alert('删除成功');
                             $scope.loadTreeData();

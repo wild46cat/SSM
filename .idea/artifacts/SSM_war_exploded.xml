@@ -38,6 +38,7 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.9" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: cglib:cglib-nodep:3.2.4" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.20" />
         </element>
       </element>
       <element id="directory" name="META-INF">
