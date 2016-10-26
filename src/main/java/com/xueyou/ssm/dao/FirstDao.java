@@ -8,4 +8,5 @@ import java.util.Map;
  */
 public interface FirstDao {
     public List<Map<String, Object>> getUser(Map<String, Object> params);
+    public int insertUser(Map<String, Object> params);
 }

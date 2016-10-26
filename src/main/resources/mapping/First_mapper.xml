@@ -4,4 +4,8 @@
     <select id="getUser" statementType="STATEMENT" resultType="Map">
         SELECT * from user
     </select>
+
+    <insert id="insertUser" statementType="STATEMENT" parameterType="Map">
+        INSERT INTO ssm.user(ID,NAME,PASSWORD) values(uuid(),'aaa','1')
+    </insert>
 </mapper>

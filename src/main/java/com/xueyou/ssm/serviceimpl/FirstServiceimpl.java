@@ -17,12 +17,19 @@ public class FirstServiceimpl implements FirstService {
     @Autowired
     FirstDao firstDao;
 
-    @Override
     public Map<String, Object> getJson(Map<String, Object> params) {
         Map<String, Object> resMap = new HashMap<>();
         resMap.put("resCode", Base.MSG_CODE_SUCCESS);
         resMap.put("resMessage", Base.MSG_SUCCESS);
         resMap.put("resList",firstDao.getUser(params));
+        return resMap;
+    }
+
+    public Map<String, Object> insertUser(Map<String, Object> params) {
+        Map<String, Object> resMap = new HashMap<>();
+        resMap.put("resCode", Base.MSG_CODE_SUCCESS);
+        resMap.put("resMessage", Base.MSG_SUCCESS);
+        resMap.put("resList",firstDao.insertUser(params));
         return resMap;
     }
 }
