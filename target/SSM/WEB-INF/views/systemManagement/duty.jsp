@@ -109,7 +109,7 @@
                     <ul id="mytree" class="easyui-tree" data-options="animate:true,lines:true"></ul>
                 </div>
             </div>
-            <div data-options="region:'center',title:'岗位',fit:true">
+            <div data-options="region:'center',title:'岗位'">
                 <div id="mytreecombo" style="width: 300px;"></div>
                 <table id="dg"></table>
             </div>

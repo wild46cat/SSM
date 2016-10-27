@@ -4,19 +4,12 @@
 <mapper  namespace="com.xueyou.ssm.dao.UserDao">
     <!--获取人员 -->
     <select id="userList" statementType="STATEMENT" parameterType="Map" resultType="Map" >
-        SELECT
-        POLICEID,POLICENAME,PWD,EMAIL,TEL,STATE,p.DUTYID,SEX,BIRTHDAY,CHECKER,CHECKTIME,ROLEID,CREATETIME,
-        CHECKSTATE,PHOTO,SUMMARY,IPAIXU,POLICENUM,c.DUTYNAME,c.DEPID,c.DEPNAME
-        from t_polices p LEFT JOIN
-        (SELECT a.DUTYID,a.DUTYNAME,a.DEPID,b.DEPNAME from t_dic_duty a INNER JOIN t_dic_department b
-        on(a.DEPID = b.DEPID))c on p.DUTYID = c.DUTYID
-        ORDER BY p.CREATETIME DESC
-        limit ${pageNum},${pageSize}
+        SELECT  ID,NAME,BIRTHDAY,LOGINID,PASSWORD,DUTYID,PHONE,EMAIL,PHOTO,REMARK,CREATETIME,STATUS FROM user
     </select>
 
     <!--获取人员个数-->
     <select id="userCount" statementType="STATEMENT" parameterType="Map" resultType="Map">
-        select COUNT(*) as 'count' from t_polices
+        select COUNT(*) as 'count' from user
     </select>
 
     <!--新增人员-->
