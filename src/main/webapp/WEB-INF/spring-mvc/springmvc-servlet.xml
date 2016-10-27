@@ -62,26 +62,4 @@
     </bean>
     <!-- 事务注解驱动，标注@Transactional的类和方法将具有事务性 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
-
-    <!-- 采用SpringMVC自带的JSON转换工具，支持@ResponseBody注解 -->
-    <bean class=" org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
-        <property name="messageConverters">
-            <list>
-                <ref bean="mappingJacksonHttpMessageConverter"/>
-            </list>
-        </property>
-    </bean>
-    <!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
-    <bean id="mappingJacksonHttpMessageConverter"
-          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <property name="supportedMediaTypes">
-            <list>
-                <value>application/json;charset=UTF-8</value>
-                <value>text/html;charset=UTF-8</value>
-            </list>
-        </property>
-        <property name="objectMapper">
-            <bean class="com.cml.mvc.framework.converter.DateTimeConverter"></bean>
-        </property>
-    </bean>
 </beans>
