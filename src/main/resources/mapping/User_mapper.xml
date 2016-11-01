@@ -3,46 +3,8 @@
 
 <mapper  namespace="com.xueyou.ssm.dao.UserDao">
     <!--获取人员 -->
-    <select id="userList" statementType="STATEMENT" parameterType="Map" resultType="Map" >
-        SELECT  ID,NAME,BIRTHDAY,LOGINID,PASSWORD,DUTYID,PHONE,EMAIL,PHOTO,REMARK,CREATETIME,STATUS FROM user
+    <select id="userList" statementType="STATEMENT" parameterType="Map" resultType="com.xueyou.ssm.model.User" >
+        SELECT ID AS id, LOGINID as loginId,PASSWORD as password,NAME as name,CREATETIME as createTime,BIRTHDAY as birthday FROM user
     </select>
 
-    <!--获取人员个数-->
-    <select id="userCount" statementType="STATEMENT" parameterType="Map" resultType="Map">
-        select COUNT(*) as 'count' from user
-    </select>
-
-    <!--新增人员-->
-    <insert id="useradd" statementType="STATEMENT" parameterType="Map">
-        INSERT INTO t_polices(POLICEID,POLICENAME,PWD,EMAIL,TEL,STATE,DUTYID,SEX,BIRTHDAY,SUMMARY,PHOTO,POLICENUM)
-        values('${policeid}','${policename}','${pwd}','${email}','${tel}','${status}','${dutyid}','${sex}','${birthday}','${summary}','${photo}','${policenum}')
-    </insert>
-    <!--人员是否已存在-->
-    <select id="getIsExist" parameterType="Map" statementType="STATEMENT" resultType="Map">
-        select * from t_polices where POLICEID = '${policeid}'
-    </select>
-
-    <!--删除人员-->
-    <delete id="userdel" statementType="STATEMENT" parameterType="Map">
-        delete from t_polices where POLICEID = '${policeid}'
-    </delete>
-
-    <!--修改-->
-    <update id="userupdate" parameterType="Map" statementType="STATEMENT">
-        update t_polices SET POLICEID = '${policeid}',POLICENAME ='${policename}',PWD='${pwd}',EMAIL='${email}',TEL='${tel}',
-        STATE='${status}',DUTYID='${dutyid}',SEX='${sex}',BIRTHDAY='${birthday}',SUMMARY='${summary}',PHOTO='${photo}',POLICENUM='${policenum}'
-        where POLICEID = '${policeid}'
-    </update>
-
-
-    <!--修改密码,判断原始密码是否正确-->
-    <select id="oldPasswordSuccess" parameterType="Map" statementType="STATEMENT" resultType="Map">
-        select * from t_polices where POLICEID = '${policeid}' and PWD='${password}'
-    </select>
-
-    <!--修改密码-->
-    <update id="updatePassword" statementType="STATEMENT" parameterType="Map">
-        update t_polices SET PWD='${newpassword}'
-        where POLICEID = '${policeid}'
-    </update>
 </mapper>

@@ -58,19 +58,9 @@
 
     <!-- 事务注解驱动，标注@Transactional的类和方法将具有事务性 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
     </bean>
     <!-- 事务注解驱动，标注@Transactional的类和方法将具有事务性 -->
-    <tx:annotation-driven transaction-manager="transactionManager" />
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
-    <!-- 自定义转换器 -->
-    <!--<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">-->
-        <!--<property name="converters">-->
-            <!--<list>-->
-                <!--<bean class="com.xueyou.ssm.utils.DateConverter"></bean>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
-    <!-- 注册转化器 -->
-    <!--<mvc:annotation-driven conversion-service="conversionService" />-->
 </beans>
