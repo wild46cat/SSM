@@ -52,7 +52,7 @@ public class UserTest {
         Map<String,Object> params = new HashMap<>();
         List<User> userlist = userDao.userList(params);
         for (User user : userlist) {
-            System.out.println(user.getName());
+            System.out.println(user.getPhoto());
         }
         Assert.assertEquals(2,userlist.size());
     }

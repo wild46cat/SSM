@@ -4,7 +4,13 @@
 <mapper  namespace="com.xueyou.ssm.dao.UserDao">
     <!--获取人员 -->
     <select id="userList" statementType="STATEMENT" parameterType="Map" resultType="com.xueyou.ssm.model.User" >
-        SELECT ID AS id, LOGINID as loginId,PASSWORD as password,NAME as name,CREATETIME as createTime,BIRTHDAY as birthday FROM user
+        SELECT ID AS id, LOGINID as loginId,PASSWORD as password,NAME as name,CREATETIME as createTime,BIRTHDAY as birthday,
+          SEX as sex,STATUS as status,DUTYID as dutyid,PHONE as phone,EMAIL as email,PHOTO as photo FROM user
     </select>
 
+    <insert id="saveUser" parameterType="com.xueyou.ssm.model.User">
+        INSERT INTO user(ID,LOGINID,PASSWORD,NAME,CREATETIME,BIRTHDAY,SEX,STATUS,DUTYID,PHONE,PHOTO,EMAIL)VALUE (
+        #{id},#{loginId},#{password},#{name},#{createTime},#{birthday},#{sex},#{status},#{dutyid},#{phone},#{photo},#{email}
+        )
+    </insert>
 </mapper>

@@ -1,6 +1,7 @@
 package com.xueyou.ssm.serviceimpl;
 
 import com.xueyou.ssm.dao.UserDao;
+import com.xueyou.ssm.model.User;
 import com.xueyou.ssm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,5 +24,9 @@ public class UserServiceImpl implements UserService{
         return resMap;
     }
 
-
+    public Map<String, Object> saveUser(User user) {
+        Map<String ,Object> resMap = new HashMap<>();
+        resMap.put("resCode",userdao.saveUser(user));
+        return resMap;
+    }
 }

@@ -10,4 +10,5 @@ import java.util.Map;
  */
 public interface UserDao {
     public List<User> userList(Map<String ,Object> params);
+    public int saveUser(User user);
 }
