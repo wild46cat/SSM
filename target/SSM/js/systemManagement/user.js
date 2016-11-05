@@ -8,6 +8,11 @@ var userapp = angular.module('userapp', [], function ($httpProvider) {
 userapp.controller('userController', function ($scope, $http) {
 
     var editFlag = undefined;
+
+    function changePhoto(item){
+        alert(123);
+    }
+
     $('#dg').datagrid({
         nowrap: false,
         striped: true,
@@ -80,13 +85,33 @@ userapp.controller('userController', function ($scope, $http) {
             }
             },
             {
-                field: 'photo', title: '照片', width: 150, align: 'center', editor: {
-                type: 'text', options: {}
-            }
+                field: 'photo', title: '照片', width: 150, align: 'center',
+                formatter: function (value, rowData, rowIndex) {
+                    return '<img src="'+BASE_URL+value+'" style="width:80px;height:100px;" alt="图片"/><br/>';
+                }
+                ,
+                //editor: {
+                //type: 'picture', options: {
+                //    upload: function () {
+                //        alert(123);
+                //    }
+                //}
+            //}
             },
             {
-                field: 'status', title: '状态', width: 150, align: 'center', editor: {
-                type: 'text', options: {}
+                field: 'status', title: '状态', width: 150, align: 'center',
+                formatter: function (value,rowData,rowIndex) {
+                    if(value == '1'){
+                        return '启用';
+                    }else{
+                        return '禁用';
+                    }
+                },editor: {
+                type: 'combobox', options: {
+                    data:[{id:'0',name:'禁用'},{id:'1',name:'启用'}],
+                    valueField:'id',
+                    textField:'name'
+                }
             }
             }
         ]],
@@ -249,6 +274,7 @@ userapp.controller('userController', function ($scope, $http) {
             }
         });
     }
+
 });
 
 var add = function () {

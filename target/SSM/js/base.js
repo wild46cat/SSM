@@ -74,3 +74,26 @@ function getRequestParam(param) {
 var MSG_ERROR = '网络连接超时!';
 var MSG_LOGINSUCCESS = '登录成功!';
 var MSG_LOGINERROR = '用户名或密码错误!';
+
+
+//easyui datagrid editor图片
+$.extend($.fn.datagrid.defaults.editors, {
+    picture: {
+        init: function(container, options){
+            var input = $('<input type="text"/><br/><input type="file"/><br/><input type="button"/> ').appendTo(container);
+            return input;
+        },
+        destroy: function(target){
+            $(target).remove();
+        },
+        getValue: function(target){
+            return $(target).val();
+        },
+        setValue: function(target, value){
+            $(target).val(value);
+        },
+        resize: function(target, width){
+            $(target)._outerWidth(width);
+        }
+    }
+});
