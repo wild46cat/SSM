@@ -29,4 +29,16 @@ public class UserServiceImpl implements UserService{
         resMap.put("resCode",userdao.saveUser(user));
         return resMap;
     }
+
+    public Map<String, Object> deleteUser(User user) {
+        Map<String ,Object> resMap = new HashMap<>();
+        resMap.put("resCode",userdao.deleteUser(user));
+        return resMap;
+    }
+
+    public Map<String, Object> updateUser(User user) {
+        Map<String ,Object> resMap = new HashMap<>();
+        resMap.put("resCode",userdao.updateUser(user));
+        return resMap;
+    }
 }

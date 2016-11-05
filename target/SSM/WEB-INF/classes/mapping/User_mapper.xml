@@ -13,4 +13,14 @@
         #{id},#{loginId},#{password},#{name},#{createTime},#{birthday},#{sex},#{status},#{dutyid},#{phone},#{photo},#{email}
         )
     </insert>
+
+    <delete id="deleteUser" parameterType="com.xueyou.ssm.model.User">
+        DELETE FROM user WHERE ID = #{id}
+    </delete>
+
+    <update id="updateUser" parameterType="com.xueyou.ssm.model.User">
+        UPDATE user SET LOGINID = #{loginId}, PASSWORD = #{password},NAME = #{name},CREATETIME = #{createTime},
+        BIRTHDAY = #{birthday},SEX = #{sex},STATUS = #{status},DUTYID=#{dutyid},PHONE = #{phone},PHOTO = #{photo},
+        EMAIL = #{email} WHERE ID = #{id}
+    </update>
 </mapper>

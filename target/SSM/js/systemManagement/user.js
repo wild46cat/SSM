@@ -21,9 +21,7 @@ userapp.controller('userController', function ($scope, $http) {
         idField: 'id',
         columns: [[
             {
-                field: 'id', title: 'ID', width: 200, align: 'center', editor: {
-                type: 'text', options: {required: true}
-            }
+                field: 'id', title: 'ID', width: 200, align: 'center'
             },
             {
                 field: 'loginId', title: '登录ID', width: 150, align: 'center', editor: {
@@ -41,18 +39,29 @@ userapp.controller('userController', function ($scope, $http) {
             }
             },
             {
-                field: 'sex', title: '性别', width: 150, align: 'center', editor: {
-                type: 'text', options: {}
+                field: 'sex', title: '性别', width: 150, align: 'center',
+                formatter: function (value,rowData,rowIndex) {
+                    if(value == '1'){
+                        return '男';
+                    }else{
+                        return '女';
+                    }
+                },editor: {
+                type: 'combobox', options: {
+                    data:[{id:'1',name:'男'},{id:'2',name:'女'}],
+                    valueField:'id',
+                    textField :'name'
+                }
             }
             },
             {
                 field: 'createTime', title: '创建日期', width: 150, align: 'center', editor: {
-                type: 'text', options: {}
+                type: 'datetimebox', options: {required:true}
             }
             },
             {
                 field: 'birthday', title: '出生年月日', width: 150, align: 'center', editor: {
-                type: 'text', options: {}
+                type: 'datetimebox', options: {required:true}
             }
             },
             {
@@ -116,23 +125,44 @@ userapp.controller('userController', function ($scope, $http) {
             text: '删除',
             iconCls: 'icon-remove',
             handler: function () {
-                alert('删除');
+                if (editFlag == undefined) {
+                    var rows = $('#dg').datagrid('getSelections');
+                    if (rows.length == 1) {
+                        deleteData(rows[0]);
+                    }
+                } else {
+                    $('#dg').datagrid('endEdit', editFlag);
+                }
             }
         }, '-', {
             text: '修改',
             iconCls: 'icon-edit',
             handler: function () {
-                alert('修改');
+                var rows = $('#dg').datagrid('getSelections');
+                if (rows.length == 1) {
+                    if (editFlag != undefined) {
+                        $('#dg').datagrid('endEdit', editFlag);
+                    } else {
+                        var index = $("#dg").datagrid('getRowIndex', rows[0]);//获取选定行的索引
+                        $("#dg").datagrid('beginEdit', index);//开启编辑并传入要编辑的行
+                        editFlag = index;
+                    }
+                }
             }
         }, '-', {
             text: '保存',
             iconCls: 'icon-save',
             handler: function () {
-                alert('save');
                 $('#dg').datagrid('endEdit', editFlag);
                 var temparr = $('#dg').datagrid('getChanges', 'inserted');
-                console.log(temparr);
-                saveData(temparr[0]);
+                if (temparr.length == 0) {
+                    //更新
+                    var rows = $('#dg').datagrid('getSelections');
+                    updateData(rows[0]);
+                } else {
+                    //添加
+                    saveData(temparr[0]);
+                }
             }
         }, '-', {
             text: '撤销',
@@ -153,6 +183,7 @@ userapp.controller('userController', function ($scope, $http) {
             success: function (data) {
                 if (data != null && data.list.length > 0) {
                     $('#dg').datagrid('loadData', data.list);
+                    editFlag = undefined;
                 }
             },
             error: function (data) {
@@ -163,14 +194,14 @@ userapp.controller('userController', function ($scope, $http) {
 
     loadData();
 
-    function saveData(item){
-        console.log(item);
+    //保存
+    function saveData(item) {
         $.ajax({
-            url:BASE_URL + "/user/saveUser",
-            method:'post',
-            data:item,
+            url: BASE_URL + "/user/saveUser",
+            method: 'post',
+            data: item,
             success: function (data) {
-                if(data!= null && data.resCode > 0){
+                if (data != null && data.resCode > 0) {
                     alert('添加成功');
                     loadData();
                 }
@@ -181,6 +212,43 @@ userapp.controller('userController', function ($scope, $http) {
         });
     };
 
+    //删除
+    function deleteData(item) {
+        if (confirm('确认删除当前选中行?')) {
+            $.ajax({
+                url: BASE_URL + "/user/deleteUser",
+                method: 'post',
+                data: item,
+                success: function (data) {
+                    if (data != null && data.resCode > 0) {
+                        alert('删除成功');
+                        loadData();
+                    }
+                },
+                error: function (data) {
+                    alert('网络连接错误');
+                }
+            });
+        }
+    };
+
+    //修改
+    function updateData(item) {
+        $.ajax({
+            url: BASE_URL + "/user/updateUser",
+            method: 'post',
+            data: item,
+            success: function (data) {
+                if (data != null && data.resCode > 0) {
+                    alert('修改成功');
+                    loadData();
+                }
+            },
+            error: function (data) {
+                alert('网络连接错误');
+            }
+        });
+    }
 });
 
 var add = function () {

@@ -55,18 +55,18 @@
     </table>
     <table name="user" schema="" catalog="ssm" type="TABLE">
       <column name="ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
-      <column name="NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
-      <column name="AGE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="BIRTHDAY" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
-      <column name="LOGINID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="J3VzZXIxJw=="/>
-      <column name="PASSWORD" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="JzEyMzQ1Nic="/>
-      <column name="DUTYID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
-      <column name="PHONE" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
-      <column name="EMAIL" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
-      <column name="PHOTO" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
-      <column name="REMARK" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5aeT5ZCN"/>
+      <column name="BIRTHDAY" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="55Sf5pel"/>
+      <column name="LOGINID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="J3VzZXIxJw==" remarks="55So5oi355m75b2VSUQ="/>
+      <column name="PASSWORD" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="JzEyMzQ1Nic=" remarks="55So5oi355m75b2V5a+G56CB"/>
+      <column name="DUTYID" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5bKX5L2NSUQ="/>
+      <column name="PHONE" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="55S16K+d"/>
+      <column name="EMAIL" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="RU1haWw="/>
+      <column name="PHOTO" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="54Wn54mH"/>
+      <column name="REMARK" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
       <column name="CREATETIME" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
-      <column name="STATUS" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="JzEn" remarks="MeKAlD7lkK/nlKggMOKAlD7npoHnlKg="/>
+      <column name="STATUS" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" def="JzEn" remarks="MeKAlD7lkK/nlKggMOKAlD7npoHnlKg="/>
+      <column name="SEX" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" def="JzEn" remarks="5oCn5YirCjHigJQ+55S3IDLigJQ+5aWz"/>
       <primary-key name="PRIMARY" columns="ID"/>
     </table>
     <table name="user_role" schema="" catalog="ssm" type="TABLE">

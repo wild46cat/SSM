@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by wuxueyou on 16/10/11.
@@ -40,11 +41,26 @@ public class UserController {
 
     @RequestMapping(value = "/saveUser")
     public Map<String, Object> saveUser(User user) {
-        Map<String,Object> params = new HashMap<>();
-        params.put("user",user);
+        Map<String, Object> params = new HashMap<>();
+        user.setId(UUID.randomUUID().toString());
+        params.put("user", user);
         System.out.println("===============");
         System.out.println(user.getStatus());
         System.out.println("===============");
         return userService.saveUser(user);
+    }
+
+    @RequestMapping(value = "/deleteUser")
+    public Map<String, Object> deleteUser(User user) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("user", user);
+        return userService.deleteUser(user);
+    }
+
+    @RequestMapping(value = "/updateUser")
+    public Map<String, Object> updateUser(User user) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("user", user);
+        return userService.updateUser(user);
     }
 }

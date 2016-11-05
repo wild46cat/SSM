@@ -10,4 +10,6 @@ import java.util.Map;
 public interface UserService {
     public Map<String, Object> userList(Map<String, Object> params);
     public Map<String, Object> saveUser(User user);
+    public Map<String, Object> deleteUser(User user);
+    public Map<String, Object> updateUser(User user);
 }
