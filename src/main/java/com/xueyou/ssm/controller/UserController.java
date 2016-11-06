@@ -22,10 +22,10 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/userlist")
-    public Map<String, Object> userList(String pageNum, String pageSize) {
+    public Map<String, Object> userList(String page, String rows) {
         Map<String, Object> params = new HashMap<String, Object>();
-//        params.put("pageNum",pageNum);
-//        params.put("pageSize",pageSize);
+        params.put("page",page);
+        params.put("rows",rows);
         return userService.userList(params);
     }
 
@@ -62,5 +62,12 @@ public class UserController {
         Map<String, Object> params = new HashMap<>();
         params.put("user", user);
         return userService.updateUser(user);
+    }
+
+    @RequestMapping(value = "/updateUserPhoto")
+    public Map<String, Object> updateUserPhoto(User user) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("user", user);
+        return userService.updateUserPhoto(user);
     }
 }

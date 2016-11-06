@@ -20,7 +20,10 @@ public class UserServiceImpl implements UserService{
 
     public Map<String, Object> userList(Map<String, Object> params) {
         Map<String, Object> resMap = new HashMap<String, Object>();
-        resMap.put("list", userdao.userList(params));
+        int page = (Integer.parseInt(params.get("page").toString()) - 1) * (Integer.parseInt(params.get("rows").toString()));
+        params.put("page",page);
+        resMap.put("total", userdao.userListCount(params).get(0).get("total").toString());
+        resMap.put("rows", userdao.userList(params));
         return resMap;
     }
 
@@ -39,6 +42,12 @@ public class UserServiceImpl implements UserService{
     public Map<String, Object> updateUser(User user) {
         Map<String ,Object> resMap = new HashMap<>();
         resMap.put("resCode",userdao.updateUser(user));
+        return resMap;
+    }
+
+    public Map<String, Object> updateUserPhoto(User user) {
+        Map<String ,Object> resMap = new HashMap<>();
+        resMap.put("resCode",userdao.updateUserPhoto(user));
         return resMap;
     }
 }

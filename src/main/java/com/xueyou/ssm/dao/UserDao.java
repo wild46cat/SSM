@@ -10,7 +10,9 @@ import java.util.Map;
  */
 public interface UserDao {
     public List<User> userList(Map<String ,Object> params);
+    public List<Map<String,Object>> userListCount(Map<String,Object> params);
     public int saveUser(User user);
     public int deleteUser(User user);
     public int updateUser(User user);
+    public int updateUserPhoto(User user);
 }

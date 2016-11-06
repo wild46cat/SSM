@@ -6,6 +6,11 @@
     <select id="userList" statementType="STATEMENT" parameterType="Map" resultType="com.xueyou.ssm.model.User" >
         SELECT ID AS id, LOGINID as loginId,PASSWORD as password,NAME as name,CREATETIME as createTime,BIRTHDAY as birthday,
           SEX as sex,STATUS as status,DUTYID as dutyid,PHONE as phone,EMAIL as email,PHOTO as photo FROM user
+          ORDER BY CREATETIME DESC limit ${page},${rows}
+    </select>
+
+    <select id="userListCount" statementType="STATEMENT" parameterType="Map" resultType="Map">
+        select COUNT(*) as total from user;
     </select>
 
     <insert id="saveUser" parameterType="com.xueyou.ssm.model.User">
@@ -22,5 +27,9 @@
         UPDATE user SET LOGINID = #{loginId}, PASSWORD = #{password},NAME = #{name},CREATETIME = #{createTime},
         BIRTHDAY = #{birthday},SEX = #{sex},STATUS = #{status},DUTYID=#{dutyid},PHONE = #{phone},PHOTO = #{photo},
         EMAIL = #{email} WHERE ID = #{id}
+    </update>
+
+    <update id="updateUserPhoto" parameterType="com.xueyou.ssm.model.User">
+        UPDATE user SET PHOTO = #{photo} WHERE ID = #{id}
     </update>
 </mapper>

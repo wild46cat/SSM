@@ -19,6 +19,7 @@
     <script src="${pageContext.request.contextPath}/Component/bootstrap/js/jquery-1.9.1.min.js"></script>
     <script src="${pageContext.request.contextPath}/Component/bootstrap/js/bootstrap.min.js"></script>
     <script src="${pageContext.request.contextPath}/Component/jqueryeasyui/jquery.easyui.min.js"></script>
+    <script src="${pageContext.request.contextPath}/Component/ajaxfileupload.js"></script>
     <script src="${pageContext.request.contextPath}/Component/jqueryeasyui/easyui-lang-zh_CN.js"></script>
     <link href="${pageContext.request.contextPath}/Component/jqueryeasyui/themes/default/easyui.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/Component/jqueryeasyui/themes/icon.css" rel="stylesheet">
@@ -45,7 +46,7 @@
         <%--</button>--%>
     <%--</div>--%>
     <div data-options="region:'center'">
-        <table id="dg"></table>
+        <table id="dg" style="height: 80%;"></table>
     </div>
 </div>
 </body>
