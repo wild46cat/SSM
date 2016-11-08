@@ -8,4 +8,11 @@
     <insert id="insertUser" statementType="STATEMENT" parameterType="Map">
         INSERT INTO ssm.user(ID,NAME,PASSWORD) values(uuid(),'aaa','1')
     </insert>
+
+    <insert id="inserttestTable" parameterType="com.xueyou.ssm.model.Ttee">
+        <selectKey keyProperty="id" resultType="string" order="BEFORE">
+            select IFNULL(concat('abc',date_format(now(),'%Y%c%d'),LPAD(substr(max(id),12,4)+1,4,'0')),concat('abc',date_format(now(),'%Y%c%d'),'0001')) as newID from testtable where id like concat('abc',date_format(now(),'%Y%c%d'),'%');
+        </selectKey>
+        INSERT INTO testtable(id,name) VALUE (#{id},#{name})
+    </insert>
 </mapper>
