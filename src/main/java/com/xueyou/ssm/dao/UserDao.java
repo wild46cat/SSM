@@ -1,6 +1,7 @@
 package com.xueyou.ssm.dao;
 
 import com.xueyou.ssm.model.User;
+import com.xueyou.ssm.model.User2;
 
 import java.util.List;
 import java.util.Map;
@@ -15,4 +16,7 @@ public interface UserDao {
     public int deleteUser(User user);
     public int updateUser(User user);
     public int updateUserPhoto(User user);
+
+    public List<User2> user2List(Map<String,Object> params);
+
 }

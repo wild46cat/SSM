@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * Created by wuxueyou on 16/10/31.
  */
-public class User {
+public class User2 {
     private String id;
     private String loginId;
     private String password;
@@ -22,6 +22,7 @@ public class User {
     private String phone;
     private String email;
     private String photo;
+    private Duty duty;
 
     public String getName() {
         return name;
@@ -145,9 +146,17 @@ public class User {
         this.photo = photo;
     }
 
+    public Duty getDuty() {
+        return duty;
+    }
+
+    public void setDuty(Duty duty) {
+        this.duty = duty;
+    }
+
     @Override
     public String toString() {
-        return "User{" +
+        return "User2{" +
                 "id='" + id + '\'' +
                 ", loginId='" + loginId + '\'' +
                 ", password='" + password + '\'' +
@@ -160,6 +169,7 @@ public class User {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", photo='" + photo + '\'' +
+                ", duty=" + duty +
                 '}';
     }
 }

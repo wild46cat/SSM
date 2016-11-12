@@ -16,4 +16,8 @@
     <update id="dutyUpdate" statementType="STATEMENT" parameterType="Map">
         update duty set DEPID = '${depid}',DUTYNAME='${dutyname}',MEMO = '${memo}',ORDERNUMBER = '${orderNumber}' WHERE ID = '${dutyid}'
     </update>
+
+    <select id="getDutyById" parameterType="String" resultType="com.xueyou.ssm.model.Duty">
+        SELECT ID as id,DUTYNAME as dutyname, MEMO as memo,DEPID as depid,ORDERNUMBER as ordernumber from duty WHERE ID = #{dutyid}
+    </select>
 </mapper>

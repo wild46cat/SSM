@@ -32,4 +32,27 @@
     <update id="updateUserPhoto" parameterType="com.xueyou.ssm.model.User">
         UPDATE user SET PHOTO = #{photo} WHERE ID = #{id}
     </update>
+
+
+    <resultMap id="user2mapper" type="com.xueyou.ssm.model.User2">
+        <id property="id" column="ID"/>
+        <result property="loginId" column="LOGINID"/>
+        <result property="password" column="PASSWORD"/>
+        <result property="name" column="NAME"/>
+        <result property="createTime" column="CREATETIME"/>
+        <result property="birthday" column="BIRTHDAY"/>
+        <result property="sex" column="SEX"/>
+        <result property="status" column="STATUS"/>
+        <result property="dutyid" column="DUTYID"/>
+        <result property="phone" column="PHONE"/>
+        <result property="email" column="EMAIL"/>
+        <result property="photo" column="PHOTO"/>
+        <association property="duty" column="DUTYID" select="com.xueyou.ssm.dao.DutyDao.getDutyById"/>
+    </resultMap>
+
+    <select id="user2List" statementType="STATEMENT" parameterType="Map" resultMap="user2mapper">
+    SELECT id, loginId,password,name,createTime,birthday,
+    sex,status,dutyid,phone,email,photo FROM user
+    ORDER BY createTime DESC limit ${page},${rows}
+    </select>
 </mapper>
