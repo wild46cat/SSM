@@ -2,6 +2,9 @@ package com.xueyou.ssm.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import java.io.Serializable;
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +12,7 @@ import java.util.Date;
 /**
  * Created by wuxueyou on 16/10/31.
  */
-public class User2 {
+public class User2 implements Serializable{
     private String id;
     private String loginId;
     private String password;
@@ -23,6 +26,42 @@ public class User2 {
     private String email;
     private String photo;
     private Duty duty;
+
+    public User2(String id, String loginId, String password, String name, String sex, Date createTime, Date birthday, String status, String dutyid, String phone, String email, String photo, Duty duty) {
+        this.id = id;
+        this.loginId = loginId;
+        this.password = password;
+        this.name = name;
+        this.sex = sex;
+        this.createTime = createTime;
+        this.birthday = birthday;
+        this.status = status;
+        this.dutyid = dutyid;
+        this.phone = phone;
+        this.email = email;
+        this.photo = photo;
+        this.duty = duty;
+    }
+
+    public User2(String id, String loginId, String password, String name, String sex, Timestamp createTime, Timestamp birthday, String status, String dutyid, String phone, String email, String photo, String did, String dutyname, String memo, String depid, String ordernumber) {
+        this.id = id;
+        this.loginId = loginId;
+        this.password = password;
+        this.name = name;
+        this.sex = sex;
+        this.createTime = createTime;
+        this.birthday = birthday;
+        this.status = status;
+        this.dutyid = dutyid;
+        this.phone = phone;
+        this.email = email;
+        this.photo = photo;
+//        this.duty = new Duty(did, dutyname, memo, depid, ordernumber);
+    }
+
+    /*public User2(String id, String loginId, String password, String name, Timestamp createTime, Timestamp birthday, String status, String dutyid, String phone, String email, String photo, String duty_id, String duty_dutyname, String duty_memo, String dutydepid, String duty_ordernumber, String) {
+
+    }*/
 
     public String getName() {
         return name;

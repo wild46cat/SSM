@@ -1,5 +1,7 @@
 package com.xueyou.ssm.model;
 
+import java.sql.Timestamp;
+
 /**
  * Created by wuxueyou on 2016/11/12.
  */
@@ -18,6 +20,14 @@ public class Duty {
         this.ordernumber = ordernumber;
     }
 
+    public Duty(String id, String loginId, String password, String name, String sex, Timestamp createTime, Timestamp birthday, String status, String dutyid, String phone, String email, String photo, String did, String dutyname, String memo, String depid, String ordernumber) {
+        this.id = did;
+        this.dutyname = dutyname;
+        this.memo = memo;
+        this.depid = depid;
+        this.ordernumber = ordernumber;
+//        this.duty = new Duty(did, dutyname, memo, depid, ordernumber);
+    }
     @Override
     public String toString() {
         return "Duty{" +

@@ -58,5 +58,18 @@ public class JoinOneToOneTest {
         System.out.println(duty);
         Assert.assertEquals("项目助理",duty.getDutyname());
     }
+
+    @Test
+    public void getUserNew(){
+        Map<String,Object> params = new HashMap<>();
+        params.put("page","1");
+        params.put("rows","10");
+        List<User2> userlist = userDao.user2Listnew(params);
+        for (User2 user : userlist) {
+            System.out.println(user);
+            System.out.println(user.getDuty());
+        }
+        Assert.assertEquals(7,userlist.size());
+    }
 }
 

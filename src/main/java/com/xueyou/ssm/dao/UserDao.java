@@ -18,5 +18,6 @@ public interface UserDao {
     public int updateUserPhoto(User user);
 
     public List<User2> user2List(Map<String,Object> params);
+    public List<User2> user2Listnew(Map<String,Object> params);
 
 }

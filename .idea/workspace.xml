@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec8c61f1-ba26-467d-b9c6-bcdd3735140e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DutyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DutyDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/systemManagement/ReflectTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/model/Duty.class" afterPath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/model/Duty.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/systemManagement/JoinOneToOneTest.class" afterPath="$PROJECT_DIR$/target/test-classes/systemManagement/JoinOneToOneTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/model/User2.class" afterPath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/model/User2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/xueyou/ssm/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java" afterPath="$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/UserDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/User_mapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/User_mapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapping/User_mapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapping/User_mapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SSM.iws" />
@@ -70,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding>
                 <marker date="1478928291000" expanded="true" signature="293:336" placeholder="select * fro..duty..." />
                 <marker date="1478928291000" expanded="true" signature="432:552" placeholder="insert into ..." />
@@ -108,28 +108,31 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/User_mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+              <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
               <folding>
-                <marker date="1478929685000" expanded="true" signature="335:561" placeholder="SELECT ID AS..user..." />
-                <marker date="1478929685000" expanded="true" signature="335:597" placeholder="SELECT ID AS..user..." />
-                <marker date="1478929685000" expanded="true" signature="335:618" placeholder="SELECT ID AS..user..." />
-                <marker date="1478929685000" expanded="true" signature="737:771" placeholder="select COUNT..user..." />
-                <marker date="1478929685000" expanded="true" signature="865:1105" placeholder="INSERT INTO ..." />
-                <marker date="1478929685000" expanded="true" signature="1200:1233" placeholder="DELETE FROM ..." />
-                <marker date="1478929685000" expanded="true" signature="1328:1588" placeholder="UPDATE user ..." />
-                <marker date="1478929685000" expanded="true" signature="1688:1737" placeholder="UPDATE user ..." />
-                <marker date="1478929685000" expanded="true" signature="2658:2812" placeholder="SELECT ID AS..user..." />
+                <marker date="1479041369000" expanded="true" signature="335:561" placeholder="SELECT ID AS..user..." />
+                <marker date="1479041369000" expanded="true" signature="335:597" placeholder="SELECT ID AS..user..." />
+                <marker date="1479041369000" expanded="true" signature="335:618" placeholder="SELECT ID AS..user..." />
+                <marker date="1479041369000" expanded="true" signature="737:771" placeholder="select COUNT..user..." />
+                <marker date="1479041369000" expanded="true" signature="865:1105" placeholder="INSERT INTO ..." />
+                <marker date="1479041369000" expanded="true" signature="1200:1233" placeholder="DELETE FROM ..." />
+                <marker date="1479041369000" expanded="true" signature="1328:1588" placeholder="UPDATE user ..." />
+                <marker date="1479041369000" expanded="true" signature="1688:1737" placeholder="UPDATE user ..." />
+                <marker date="1479041369000" expanded="true" signature="2658:2812" placeholder="SELECT ID AS..user..." />
+                <marker date="1479041369000" expanded="true" signature="4031:4497" placeholder="SELECT a.ID ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinOneToOneTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JoinOneToOneTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50843376">
-              <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,26 +141,26 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="156" column="12" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
-                <element signature="e#1557#1558#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#1968#1969#0" expanded="true" />
-                <element signature="e#2924#2925#0" expanded="true" />
-                <element signature="e#2960#2961#0" expanded="true" />
-                <element signature="e#2992#2993#0" expanded="true" />
-                <element signature="e#3020#3021#0" expanded="true" />
-                <element signature="e#3062#3063#0" expanded="true" />
-                <element signature="e#3096#3097#0" expanded="true" />
-                <element signature="e#3125#3126#0" expanded="true" />
-                <element signature="e#3152#3153#0" expanded="true" />
-                <element signature="e#3190#3191#0" expanded="true" />
-                <element signature="e#3222#3223#0" expanded="true" />
+                <element signature="e#2322#2323#0" expanded="true" />
+                <element signature="e#2349#2350#0" expanded="true" />
+                <element signature="e#2715#2716#0" expanded="true" />
+                <element signature="e#2745#2746#0" expanded="true" />
+                <element signature="e#3649#3650#0" expanded="true" />
+                <element signature="e#3680#3681#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/systemManagement/ReflectTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.65824914">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,28 +170,28 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1349#1350#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
-                <element signature="e#1475#1476#0" expanded="true" />
-                <element signature="e#1521#1522#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
+                <element signature="e#1400#1401#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1499#1500#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
+                <element signature="e#1578#1579#0" expanded="true" />
+                <element signature="e#1618#1619#0" expanded="true" />
+                <element signature="e#1649#1650#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1716#1717#0" expanded="true" />
+                <element signature="e#1748#1749#0" expanded="true" />
+                <element signature="e#1780#1781#0" expanded="true" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#1850#1851#0" expanded="true" />
+                <element signature="e#1884#1885#0" expanded="true" />
+                <element signature="e#1922#1923#0" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#2010#2011#0" expanded="true" />
+                <element signature="e#2056#2057#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,7 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/systemManagement/department.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DutyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/service/DutyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/serviceimpl/DutyServiceImpl.java" />
@@ -265,14 +267,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/FirstDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/systemManagement/PrimaryTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/First_mapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DutyDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/User_mapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/User_mapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/systemManagement/ReflectTest.java" />
       </list>
     </option>
   </component>
@@ -963,7 +966,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="dynamic.classpath" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="xml&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;duty.xm&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;userDao&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/UserDao.java&#10;first&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/First_mapper.xml&#10;firstDao&#9;PSI&#9;JAVA://com.xueyou.ssm.dao.FirstDao&#10;firstDa&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/FirstDao.java&#10;login&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Login_mapper.xml&#10;zh&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/webapp/Component/jqueryeasyui/easyui-lang-zh_CN.js&#10;User&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/webapp/WEB-INF/views/systemManagement/user.jsp&#10;user&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/model/User.java&#10;mvc&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/webapp/WEB-INF/spring-mvc/springmvc-servlet.xml&#10;pom&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/pom.xml&#10;Firs&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/First_mapper.xml&#10;FirstDao&#9;PSI&#9;JAVA://com.xueyou.ssm.dao.FirstDao&#10;Duty&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;departmentDa&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java&#10;Department&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Department_mapper.xml&#10;Depar&#9;PSI&#9;JAVA://com.xueyou.ssm.serviceimpl.DepartmentServiceImpl&#10;depart&#9;PSI&#9;JAVA://com.xueyou.ssm.controller.DepartmentController" />
+    <property name="SearchEverywhereHistoryKey" value="User2&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/model/User2.java&#10;xml&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;duty.xm&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;userDao&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/UserDao.java&#10;first&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/First_mapper.xml&#10;firstDao&#9;PSI&#9;JAVA://com.xueyou.ssm.dao.FirstDao&#10;firstDa&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/FirstDao.java&#10;login&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Login_mapper.xml&#10;zh&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/webapp/Component/jqueryeasyui/easyui-lang-zh_CN.js&#10;User&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/webapp/WEB-INF/views/systemManagement/user.jsp&#10;user&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/model/User.java&#10;mvc&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/webapp/WEB-INF/spring-mvc/springmvc-servlet.xml&#10;pom&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/pom.xml&#10;Firs&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/First_mapper.xml&#10;FirstDao&#9;PSI&#9;JAVA://com.xueyou.ssm.dao.FirstDao&#10;Duty&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Duty_mapper.xml&#10;departmentDa&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/java/com/xueyou/ssm/dao/DepartmentDao.java&#10;Department&#9;FILE&#9;file:///Users/wuxueyou/Project/j2ee/SSM/src/main/resources/mapping/Department_mapper.xml&#10;Depar&#9;PSI&#9;JAVA://com.xueyou.ssm.serviceimpl.DepartmentServiceImpl&#10;depart&#9;PSI&#9;JAVA://com.xueyou.ssm.controller.DepartmentController" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="140" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
@@ -995,59 +998,7 @@
       <recent name="com.xueyou.ssm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JoinOneToOneTest">
-    <configuration default="false" name="UserTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="systemManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SSM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="systemManagement" />
-      <option name="MAIN_CLASS_NAME" value="systemManagement.UserTest" />
-      <option name="METHOD_NAME" value="getUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PrimaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="systemManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SSM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="systemManagement" />
-      <option name="MAIN_CLASS_NAME" value="systemManagement.PrimaryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReflectTest.tt">
     <configuration default="false" name="JoinOneToOneTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1113,6 +1064,58 @@
       <option name="PACKAGE_NAME" value="systemManagement" />
       <option name="MAIN_CLASS_NAME" value="systemManagement.JoinOneToOneTest" />
       <option name="METHOD_NAME" value="getDuty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JoinOneToOneTest.getUserNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="systemManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SSM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="systemManagement" />
+      <option name="MAIN_CLASS_NAME" value="systemManagement.JoinOneToOneTest" />
+      <option name="METHOD_NAME" value="getUserNew" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReflectTest.tt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="systemManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SSM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="systemManagement" />
+      <option name="MAIN_CLASS_NAME" value="systemManagement.ReflectTest" />
+      <option name="METHOD_NAME" value="tt" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1486,19 +1489,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.t8" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserTest.getUser" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PrimaryTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getUser" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getDuty" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getUser" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getDuty" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getUserNew" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ReflectTest.tt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getUser" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getDuty" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PrimaryTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest.getUser" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ReflectTest.tt" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getUserNew" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JoinOneToOneTest.getDuty" />
       </list>
     </recent_temporary>
   </component>
@@ -1517,12 +1520,12 @@
       <workItem from="1476619176462" duration="25491000" />
       <workItem from="1476967952328" duration="30065000" />
       <workItem from="1477495865274" duration="16034000" />
-      <workItem from="1478085050535" duration="38741000" />
+      <workItem from="1478085050535" duration="49495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194444000" />
+    <option name="totallyTimeSpent" value="205198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1535,7 +1538,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1546,7 +1549,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46626505" sideWeight="0.49284694" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25060242" sideWeight="0.49284694" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.49298596" order="0" side_tool="false" content_ui="combo" />
@@ -1556,7 +1559,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.70963854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1588,13 +1591,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/controller/DepartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.488764">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/systemManagement/department.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38202247">
@@ -2000,62 +1996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="12" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
-          <folding>
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1968#1969#0" expanded="true" />
-            <element signature="e#2924#2925#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
-            <element signature="e#2992#2993#0" expanded="true" />
-            <element signature="e#3020#3021#0" expanded="true" />
-            <element signature="e#3062#3063#0" expanded="true" />
-            <element signature="e#3096#3097#0" expanded="true" />
-            <element signature="e#3125#3126#0" expanded="true" />
-            <element signature="e#3152#3153#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3222#3223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/DutyDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2067,7 +2007,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/Duty_mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <marker date="1478928291000" expanded="true" signature="293:336" placeholder="select * fro..duty..." />
             <marker date="1478928291000" expanded="true" signature="432:552" placeholder="insert into ..." />
@@ -2078,10 +2018,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/Duty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1499#1500#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1578#1579#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2091,26 +2070,44 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/User_mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
           <folding>
-            <marker date="1478929685000" expanded="true" signature="335:561" placeholder="SELECT ID AS..user..." />
-            <marker date="1478929685000" expanded="true" signature="335:597" placeholder="SELECT ID AS..user..." />
-            <marker date="1478929685000" expanded="true" signature="335:618" placeholder="SELECT ID AS..user..." />
-            <marker date="1478929685000" expanded="true" signature="737:771" placeholder="select COUNT..user..." />
-            <marker date="1478929685000" expanded="true" signature="865:1105" placeholder="INSERT INTO ..." />
-            <marker date="1478929685000" expanded="true" signature="1200:1233" placeholder="DELETE FROM ..." />
-            <marker date="1478929685000" expanded="true" signature="1328:1588" placeholder="UPDATE user ..." />
-            <marker date="1478929685000" expanded="true" signature="1688:1737" placeholder="UPDATE user ..." />
-            <marker date="1478929685000" expanded="true" signature="2658:2812" placeholder="SELECT ID AS..user..." />
+            <marker date="1479041369000" expanded="true" signature="335:561" placeholder="SELECT ID AS..user..." />
+            <marker date="1479041369000" expanded="true" signature="335:597" placeholder="SELECT ID AS..user..." />
+            <marker date="1479041369000" expanded="true" signature="335:618" placeholder="SELECT ID AS..user..." />
+            <marker date="1479041369000" expanded="true" signature="737:771" placeholder="select COUNT..user..." />
+            <marker date="1479041369000" expanded="true" signature="865:1105" placeholder="INSERT INTO ..." />
+            <marker date="1479041369000" expanded="true" signature="1200:1233" placeholder="DELETE FROM ..." />
+            <marker date="1479041369000" expanded="true" signature="1328:1588" placeholder="UPDATE user ..." />
+            <marker date="1479041369000" expanded="true" signature="1688:1737" placeholder="UPDATE user ..." />
+            <marker date="1479041369000" expanded="true" signature="2658:2812" placeholder="SELECT ID AS..user..." />
+            <marker date="1479041369000" expanded="true" signature="4031:4497" placeholder="SELECT a.ID ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/systemManagement/JoinOneToOneTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueyou/ssm/model/User2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50843376">
-          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#2322#2323#0" expanded="true" />
+            <element signature="e#2349#2350#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+            <element signature="e#3649#3650#0" expanded="true" />
+            <element signature="e#3680#3681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/systemManagement/ReflectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65824914">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
